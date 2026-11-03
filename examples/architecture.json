@@ -1,0 +1,113 @@
+{
+  "cycles": [],
+  "dead_code": [
+    {
+      "line": 29,
+      "module": "core.engine",
+      "name": "unused_engine_helper"
+    },
+    {
+      "line": 4,
+      "module": "orphan",
+      "name": "orphan_fn"
+    }
+  ],
+  "edges": {
+    "core.engine": [
+      "core.utils"
+    ],
+    "main": [
+      "core.engine"
+    ]
+  },
+  "entry_points": [
+    "core",
+    "main",
+    "orphan"
+  ],
+  "hotspots": [
+    {
+      "complexity": 7,
+      "module": "core.engine",
+      "name": "check_result"
+    }
+  ],
+  "modules": {
+    "core": {
+      "classes": [],
+      "external_imports": [],
+      "functions": [],
+      "imports": [],
+      "lines": 0,
+      "parse_error": null,
+      "path": "core/__init__.py"
+    },
+    "core.engine": {
+      "classes": [],
+      "external_imports": [],
+      "functions": [
+        "check_result",
+        "run",
+        "unused_engine_helper"
+      ],
+      "imports": [
+        "core.utils"
+      ],
+      "lines": 30,
+      "parse_error": null,
+      "path": "core/engine.py"
+    },
+    "core.utils": {
+      "classes": [],
+      "external_imports": [],
+      "functions": [
+        "format_result"
+      ],
+      "imports": [],
+      "lines": 5,
+      "parse_error": null,
+      "path": "core/utils.py"
+    },
+    "main": {
+      "classes": [],
+      "external_imports": [
+        "sys"
+      ],
+      "functions": [
+        "main"
+      ],
+      "imports": [
+        "core.engine"
+      ],
+      "lines": 15,
+      "parse_error": null,
+      "path": "main.py"
+    },
+    "orphan": {
+      "classes": [],
+      "external_imports": [],
+      "functions": [
+        "orphan_fn"
+      ],
+      "imports": [],
+      "lines": 5,
+      "parse_error": null,
+      "path": "orphan.py"
+    }
+  },
+  "orphans": [
+    "orphan"
+  ],
+  "root": "/home/hatch/workspace/github-repos/repoxray/tests/fixtures/sample_project",
+  "summary": {
+    "external_packages": 1,
+    "internal_edges": 2,
+    "modules": 5,
+    "other_files": 0,
+    "parse_errors": 0,
+    "python_files": 5,
+    "total_classes": 0,
+    "total_functions": 6,
+    "total_lines": 55
+  }
+}
